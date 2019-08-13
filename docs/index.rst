@@ -14,12 +14,3 @@ Swarm Virtual Research Environment (VRE) Documentation
    jupyter
    software
    collaborating
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
