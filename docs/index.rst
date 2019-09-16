@@ -7,10 +7,24 @@ Swarm Virtual Research Environment (VRE) Documentation
 ======================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+  :maxdepth: 2
+  :caption: Contents:
 
-   intro
-   jupyter
-   software
-   collaborating
+  intro
+  help
+  jupyter
+  software
+  collaborating
+
+.. toctree::
+  :maxdepth: 2
+  :caption: External Links:
+
+  Swarm-VRE login <https://vre.vires.services/>
+  VirES web interface <https://vires.services/>
+
+  Swarm-VRE GitHub <https://github.com/ESA-VirES/Swarm-VRE/>
+  viresclient Documentation <https://viresclient.readthedocs.io/>
+  viresclient GitHub <https://github.com/ESA-VirES/VirES-Python-Client/>
+  viresclient notebook repository <https://github/smithara/viresclient_examples/>
+  Swarm-DISC GitHub <https://github.com/Swarm-DISC/>
