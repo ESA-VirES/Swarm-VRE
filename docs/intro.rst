@@ -22,7 +22,7 @@ Swarm data can be explored graphically through the web client (https://vires.ser
 Getting access
 --------------
 
-You must first create a VirES account at https://vires.services - it is recommended to use a GitHub account to login, and to use your GitHub username as your VirES username. This will help with identifying user accounts and sharing code both within and outwith the VRE via GitHub. Please then email info@vires.services, quoting your username, to have your account "upgraded" to VRE access. After this, you should be able to login to the VRE at https://vre.vires.services
+You must first create a VirES account at https://vires.services - it is recommended to use a GitHub account to login, and to use your GitHub username as your VirES username. This will help with identifying user accounts and sharing code both within and outwith the VRE via GitHub. You can then access the VRE right away, either from the top pane of the VirES GUI (click on your username at the top right), or directly at https://vre.vires.services. To start using *viresclient* to access Swarm data, see `the associated documentation <https://viresclient.readthedocs.io/en/latest/installation.html#first-usage-configuration>`_.
 
 Related links
 -------------

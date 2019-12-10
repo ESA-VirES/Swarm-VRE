@@ -66,15 +66,21 @@ The default environment comes from a Docker image which is based on the "Jupyter
 
 If you install some packages with ``conda install ...`` or ``pip install ...``, this will indeed install them and make them available to the default kernel. *However*, they will disappear the next time your container shuts down. When you have not been active for some period of time (<~hours), the container within which your environment is running will shut down. When you log in again, the environment is created anew from the image that everybody shares, so your modifications will no longer be present. This means that installing packages (& extensions) in this way is only sensible for briefly trying them out.
 
-If you need access to a different collection of packages (e.g. you need a certain unsupported package, or different versions of what is available), then the way to achieve this is through creating an additional kernel, which you can then optionally use to execute scripts or notebooks, in place of the default kernel. This procedure is not covered in full here, but in short::
+If you need access to a different collection of packages (e.g. you need a certain unsupported package, or different versions of what is available), then the way to achieve this is through creating an additional kernel, which you can then optionally use to execute scripts or notebooks, in place of the default kernel. This procedure is not covered in full here, but in short:
+
+.. code-block:: bash
 
   conda create --prefix <kernelname> <packages>
 
-will create the a new conda "environment" (see the existing ones with ``conda env list``). For example::
+will create the a new conda "environment" (see the existing ones with ``conda env list``). For example:
+
+.. code-block:: bash
 
   conda create --prefix ~/envs/my_env ipykernel numpy
 
-will create an environment stored within `~/envs/` and called 'my_env', with the packages ipykernel (this is required), and numpy. This kernel then needs to be *registered* with Jupyter::
+will create an environment stored within `~/envs/` and called 'my_env', with the packages ipykernel (this is required), and numpy. This kernel then needs to be *registered* with Jupyter:
+
+.. code-block:: bash
 
   ~/envs/my_env/bin/python -m ipykernel install --user --name my_env --display-name "my_env"
 
