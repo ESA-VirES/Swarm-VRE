@@ -6,6 +6,10 @@
 Swarm Virtual Research Environment (VRE) Documentation
 ======================================================
 
+This documentation is built from https://github.com/ESA-VirES/Swarm-VRE
+
+Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm_notebooks
+
 .. toctree::
   :maxdepth: 2
   :caption: Contents:
@@ -17,6 +21,13 @@ Swarm Virtual Research Environment (VRE) Documentation
   systemspec
   collaborating
   notebook_development
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Swarm Notebooks
+
+  notebooks_preface
+  Swarm_notebooks/01a__Intro-Jupyter-Python
 
 .. toctree::
   :maxdepth: 2

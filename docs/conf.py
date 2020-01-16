@@ -14,6 +14,18 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from subprocess import run
+from os import path
+
+# Fetch external notebook repository
+if not path.exists("Swarm_notebooks"):
+    run(["git", "clone",
+         "https://github.com/Swarm-DISC/Swarm_notebooks.git",
+         "Swarm_notebooks"],
+        check=True)
+else:
+    run(["git", "-C", "Swarm_notebooks/", "pull"])
+
 
 # -- Project information -----------------------------------------------------
 
@@ -29,6 +41,8 @@ author = 'EOX'
 # ones.
 extensions = [
     'sphinx.ext.todo',
+    'nbsphinx',
+    'sphinx.ext.mathjax',
 ]
 todo_include_todos = True
 
@@ -42,6 +56,18 @@ master_doc = 'index'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+
+# -- nbsphinx configuration - see https://nbsphinx.readthedocs.io ------------
+nbsphinx_prolog = """
+{% set nbpath = env.doc2path(env.docname, base=None) %}
+{% set nbname = '/'.join(nbpath.split('/')[1:]) %}
+.. note::
+
+    | Notebook source repo: https://github.com/Swarm-DISC/Swarm_notebooks
+    | Notebook name: ``{{ nbname }}``
+"""
+nbsphinx_execute = 'never'
 
 
 # -- Options for HTML output -------------------------------------------------

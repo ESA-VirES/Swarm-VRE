@@ -165,6 +165,7 @@ Repository badges
 
 .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
     :target: https://nbviewer.jupyter.org/github/smithara/IAGA_SummerSchool2019/tree/master/notebooks/
+
 `NBViewer <https://nbviewer.jupyter.org/>`_ renders notebooks better than GitHub
 
 Markdown::
