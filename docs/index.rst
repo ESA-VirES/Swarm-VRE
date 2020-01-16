@@ -16,6 +16,7 @@ Swarm Virtual Research Environment (VRE) Documentation
   software
   systemspec
   collaborating
+  notebook_development
 
 .. toctree::
   :maxdepth: 2

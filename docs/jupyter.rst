@@ -72,3 +72,5 @@ A few other examples of JupyterHub deployments:
 
 - http://pangeo.io
 - http://data8.org/
+- https://www.egi.eu/services/notebooks/
+- https://www.dataschool.io/cloud-services-for-jupyter-notebook/
