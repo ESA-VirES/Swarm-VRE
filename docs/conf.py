@@ -66,6 +66,10 @@ nbsphinx_prolog = """
 
     | Notebook source repo: https://github.com/Swarm-DISC/Swarm_notebooks
     | Notebook name: ``{{ nbname }}``
+    | `Download as .ipynb (right click and save as) <{{
+        "https://raw.githubusercontent.com/Swarm-DISC/Swarm_notebooks/master/"
+        + nbname }}>`_
+    | (TODO: VRE access link)
 """
 nbsphinx_execute = 'never'
 

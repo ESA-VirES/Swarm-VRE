@@ -12,7 +12,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
 
 .. toctree::
   :maxdepth: 2
-  :caption: Contents:
+  :caption: VRE Information:
 
   intro
   help
@@ -21,13 +21,26 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   systemspec
   collaborating
   notebook_development
+  notebooks_preface
 
 .. toctree::
   :maxdepth: 2
-  :caption: Swarm Notebooks
+  :caption: VirES/VRE Intros:
 
-  notebooks_preface
   Swarm_notebooks/01a__Intro-Jupyter-Python
+  Swarm_notebooks/02a__Intro-Swarm-viresclient
+  Swarm_notebooks/02b__viresclient-Available-Data
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Swarm Product Demos:
+
+  Swarm_notebooks/03a1_Demo-MAGx_LR_1B
+  Swarm_notebooks/03b__Demo-EFIx_LP_1B
+  Swarm_notebooks/03c__Demo-IPDxIRR_2F
+  Swarm_notebooks/03d__Demo-TECxTMS_2F
+  Swarm_notebooks/03f__Demo-EEFxTMS_2F
+  Swarm_notebooks/03g__Demo-IBIxTMS_2F
 
 .. toctree::
   :maxdepth: 2

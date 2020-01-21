@@ -10,11 +10,12 @@ Swarm Notebooks Overview
   The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks
 
   | ``TODO: link to launch on VRE`` https://vre.vires.services/
-  | Choice: access them as read-only in ``shared`` folder OR pull the repo in with nbgitpuller
+  | Choice: access them through a Jupyter extension to explore and add notebooks
+  |   OR access them as read-only in ``shared`` folder
+  |   OR pull the repo in with nbgitpuller
 
-.. note::
-
-    The repository has two main branches: the ``dev`` branch contains a history of commits *without* cell outputs, while the ``master`` branch contains the notebooks in an executed form with the outputs included (this is what is rendered on the following pages). Pull requests should be made against the ``dev`` branch with notebooks in a cleared state so as to maintain a clean version history. The ``master`` branch will subsequently be updated with the new changes included. This is in accordance with the guidance at https://mg.readthedocs.io/git-jupyter.html
+Notebook catalogue
+------------------
 
 These notebooks are organised according to a naming convention to categorise and allow for future development::
 
@@ -24,11 +25,46 @@ These notebooks are organised according to a naming convention to categorise and
   02a__<nbname>   Theme 2, subject a
   ...
 
+Planned notebook names:
+
+.. code-block:: none
+
+  01a__Intro-Jupyter-Python.ipynb             DONE - pending updates (AS)
+
+  02a__Intro-Swarm-viresclient.ipynb          DONE - pending updates (AS)
+  02b__viresclient-Available-Data.ipynb       DONE - pending updates (AS)
+  02c__viresclient-API.ipynb                  IN PROGRESS (LM)
+  02d__viresclient-Large-Data-Volumes.ipynb   IN PROGRESS (AS)
+  02e1_PlotExamples-Cartopy.ipynb             NOT CONFIRMED (MP/AS)
+  02e2_PlotExamples-PeriodicAxes.ipynb        NOT CONFIRMED (MP/AS)
+  02e3_PlotExamples-LinePlots.ipynb           NOT CONFIRMED (MP/AS)
+
+  03a1_Demo-MAGx_LR_1B.ipynb                  DONE - pending updates (AS)
+  03a2_Demo-MAGx_HR_1B.ipynb                  IN PROGRESS (MP/AS)
+  03b__Demo-EFIx_LP_1B.ipynb                  DONE - pending updates (AS)
+  03c__Demo-IPDxIRR_2F.ipynb                  DONE - pending updates (AS)
+  03d__Demo-TECxTMS_2F.ipynb                  DONE - pending updates (AS)
+  03e1_Demo-FAC_TMS_2F.ipynb                  IN PROGRESS (AS)
+  03e__Demo-FACxTMS_2F.ipynb                  IN PROGRESS (AS)
+  03f__Demo-EEFxTMS_2F.ipynb                  DONE - pending updates (AS)
+  03g__Demo-IBIxTMS_2F.ipynb                  DONE - pending updates (AS)
+
+  04a__Geomagnetic-Models.ipynb               NOT CONFIRMED
+
+  05a__FAC-Algorithms.ipynb                   NOT CONFIRMED
+
+Definitions:
+
+.. code-block:: none
+
+  DONE:           currently in Swarm_notebooks repository
+  NOT CONFIRMED:  name could change / could be multiple notebooks
+
 01: Generic grounding in Jupyter & Python
 -----------------------------------------
 .. code-block:: none
 
-  01a__Intro-Jupyter-Python   (in progress)
+  01a__Intro-Jupyter-Python
   01b__<core lib demos>       (could do in the future)
   ...
 
@@ -39,41 +75,42 @@ These notebooks are organised according to a naming convention to categorise and
   02a__Intro-Swarm-viresclient             (config, basic data access and plotting)
   02b__viresclient-Available-Data-Models   (identifying available data, configuring models)
   02c__viresclient-API                     (further detail on interacting with viresclient)
-  02d__viresclient-Large-Data-Volumes
+  02d__viresclient-Large-Data-Volumes      (some strategies for working with larger data)
+  02e1_PlotExamples....                    (more complex plot types)
 
-Refs:
-  - https://github.com/smithara/viresclient_examples/blob/master/0_first_usage.ipynb
-  - https://github.com/smithara/viresclient_examples/blob/master/1_what_is_available.ipynb
-  - https://github.com/smithara/viresclient_examples/blob/master/model_details.ipynb
-  - https://github.com/smithara/viresclient_examples/blob/master/large_data_volumes.ipynb
+Plot Examples to contain:
 
-
-03: Demonstrations of accessing each data product
--------------------------------------------------
 .. code-block:: none
 
-  03a__Product-Demo-FAC
-  03b__Product-Demo-xyz
-  ... for each product/collection
+  periodic axes (could be nice for the FAC demos)
+  isolines (involves magnetic model calculation with eoxmagmod)
+  statistics
+  error intervals
+  polar views
 
 Refs:
-  - https://github.com/smithara/viresclient_examples/  basic_XYZ.ipynb
+  - https://github.com/pacesm/jupyter_notebooks/blob/master/Periodic%20Axis.ipynb
+  - https://github.com/pacesm/jupyter_notebooks/blob/master/examples/CHAOS-6_Cartopy_Contours.ipynb
 
+03: Demonstrate accessing each product
+--------------------------------------
+.. code-block:: none
 
-04: Magnetic model comparisons - Scientific notebooks
------------------------------------------------------
+  03a1_Demo-MAGx_LR_1B           (load and plot example of the data/product)
+  etc... for each product/collection, using the official Swarm product names
+
+04: Magnetic model comparisons
+------------------------------
 Demo different magnetic models, plotting etc, together with scientific discussion
 
 .. code-block:: none
 
   04a__...
 
-
 Refs:
   - https://github.com/smithara/viresclient_examples/blob/master/inspect_CHAOS_MMA.ipynb
   - https://github.com/smithara/viresclient_examples/blob/master/CHAOS_Core%2BStatic%2BMMA_residuals.ipynb
   - https://github.com/smithara/viresclient_examples/blob/master/model_residuals_and_cartopy.ipynb
-
 
 05: FAC Demonstrations
 ----------------------
@@ -83,25 +120,8 @@ Refs:
   05b__<FAC-algo1...> etc.
 
 
-Miscellaneous plotting demos
-----------------------------
 
-*Include as generic Python demos (01x..) OR fold into some of the above nbs?*
-
-.. code-block:: none
-
-  periodic axes
-  isolines (involves magnetic model calculation with eoxmagmod)
-  statistics
-  error lines
-  polar views
-
-Refs:
-  - https://github.com/pacesm/jupyter_notebooks/blob/master/Periodic%20Axis.ipynb
-  - https://github.com/pacesm/jupyter_notebooks/blob/master/examples/CHAOS-6_Cartopy_Contours.ipynb
-
-
-Beyond ``Swarm_notebooks``
---------------------------
+Beyond Swarm_notebooks
+----------------------
 
 These notebooks are demonstrations of the capabilities of Swarm data and the VirES/VRE platform. They are meant as a tutorial-like resource to help educate the community with showcases of certain tools (including Swarm-related Python packages). It is hoped that this will encourage the development of reproducible analyses as notebook repositories and of more generally applicable packages.
