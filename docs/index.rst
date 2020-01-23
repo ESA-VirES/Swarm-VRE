@@ -11,6 +11,10 @@ This documentation is built from https://github.com/ESA-VirES/Swarm-VRE
 Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm_notebooks
 
 .. toctree::
+
+  --> [Launch VRE] <https://vre.vires.services/>
+
+.. toctree::
   :maxdepth: 2
   :caption: VRE Information:
 
@@ -46,9 +50,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   :maxdepth: 2
   :caption: External Links:
 
-  Swarm-VRE login <https://vre.vires.services/>
   VirES web interface <https://vires.services/>
-
   viresclient Documentation <https://viresclient.readthedocs.io/>
   viresclient notebook repository <https://github.com/smithara/viresclient_examples/>
   Swarm-VRE GitHub <https://github.com/ESA-VirES/Swarm-VRE/>
