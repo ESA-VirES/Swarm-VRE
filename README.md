@@ -5,6 +5,5 @@ This repository contains the user-facing documentation for the VRE, and any othe
 
 - Documentation: https://swarm-vre.readthedocs.io/
 - VRE login: http://vre.vires.services
-- Unofficial chat site: https://riot.im/app/#/room/#vires:matrix.org
 
 Bugs and feature requests can be reported using the GitHub issue tracker (https://github.com/ESA-VirES/Swarm-VRE/issues)

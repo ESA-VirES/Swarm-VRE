@@ -7,30 +7,104 @@ Notebook development
 
 .. note::
 
-  Use an etherpad at the workshop? https://etherpad.wikimedia.org/
+  This page provides practical instructions for how to work with notebooks, specifically using the VRE, but most of the advice applies anywhere. Particular tools and approaches are recommended, though for brevity we do not expound the rationale in detail - we try to point you to the best practices and popular solutions. This guide is a work in progress and any contributions are welcome (`contact us <help.html>`_).
+
+  - Sources:
+
+    - `The Turing Way <https://the-turing-way.netlify.com/>`_
+    - `Creating Reproducible Data Science Projects <https://towardsdatascience.com/creating-reproducible-data-science-projects-1fa446369386>`_
+    - https://github.com/rdanotebooksbof/outline/blob/master/SummaryFromBoFMeeting.md
+    - https://mg.readthedocs.io/git-jupyter.html
+    - ... and more
+
+  - Assumed knowledge:
+
+    - how to use git
+    - ...
+
+Related notebook repositories
+-----------------------------
+
+.. list-table:: Notebook repositories
+   :header-rows: 1
+   :widths: 7 5 5
+
+   *  -  Name (GitHub Link)
+      -  View (nbviewer)
+      -  Launch/interact (VRE)
+   *  -  `Swarm-DISC/Swarm_notebooks <https://github.com/Swarm-DISC/Swarm_notebooks>`_
+      -  .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
+            :target: https://nbviewer.jupyter.org/github/Swarm-DISC/Swarm_notebooks
+      -  .. image:: https://img.shields.io/badge/interact-VRE-blue
+            :target: https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/
+   *  -  `smithara/viresclient_examples <https://github.com/smithara/viresclient_examples>`_
+      -  .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
+            :target: https://nbviewer.jupyter.org/github/smithara/viresclient_examples
+      -  (to do: nbgitpuller link)
+   *  -  `pacesm/jupyter_notebooks <https://github.com/pacesm/jupyter_notebooks>`_
+      -  .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
+            :target: https://nbviewer.jupyter.org/github/pacesm/jupyter_notebooks
+      -  (to do: nbgitpuller link)
+   *  - `MagneticEarth/IAGA_SummerSchool2019 <https://github.com/MagneticEarth/IAGA_SummerSchool2019>`_
+      - .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
+           :target: https://nbviewer.jupyter.org/github/MagneticEarth/IAGA_SummerSchool2019/
+      - (to do: nbgitpuller link)
+
 
 .. note::
 
-  This page provides practical instructions for how to work with notebooks, specifically using the VRE, but most of the advice applies anywhere. Particular tools and approaches are recommended, though for brevity we do not expound the rationale in detail - we try to point you to the best practices and popular solutions. This guide is a work in progress and any contributions are welcome (`contact us <help.html>`_).
+  **Viewing:**
 
-  Sources:
+  Sometimes notebooks won't render directly on the GitHub website (or are slow). Try `nbviewer <https://nbviewer.jupyter.org/>`_ instead (see the "Render" links above).
 
-  - `The Turing Way <https://the-turing-way.netlify.com/>`_
-  - `Creating Reproducible Data Science Project <https://towardsdatascience.com/creating-reproducible-data-science-projects-1fa446369386x>`_
-  - and more...
-  - https://github.com/rdanotebooksbof/outline/blob/master/SummaryFromBoFMeeting.md
-  - https://mg.readthedocs.io/git-jupyter.html
+  *Swarm_notebooks* are also rendered on the following pages of this site.
 
-  Assumed knowledge:
+  **Interacting:**
 
-  - how to use git
-  - ...
+  *Swarm_notebooks* are pre-loaded on the VRE in the shared directory. In this case they are read-only, which means that you can still edit and execute them, but you can't save changes directly.
+
+  Other notebooks must be manually loaded as below (though will soon be made easier easier using nbgitpuller)
+
+Notebooks can be uploaded to JupyterLab using the "Upload" button (which means you must first download the notebooks to your computer from GitHub). To easily access a full repository, open a command line console and use git:
+
+To clone a repository to your working space::
+
+    git clone https://github.com/Swarm-DISC/Swarm_notebooks.git
+
+(this will clone it into ``Swarm_notebooks`` within your current directory)
+
+To clear any changes you made and fetch the latest version, from within ``Swarm_notebooks`` run::
+
+    git fetch
+    git reset --hard origin/master
 
 
 What are notebooks?
 -------------------
 
 "Jupyter notebooks [..] allow data scientists to include their original code and interactive visuals alongside a detailed research or analysis output. This allows others to not only understand your analysis but also the story of how you got there, allowing the reader to interact directly with the data and insights." `(source) <https://towardsdatascience.com/creating-reproducible-data-science-projects-1fa446369386>`_
+
+  - Exploratory messing-around (`example <https://github.com/smithara/viresclient_examples>`_)
+
+    - won't be very tidy and reproducibility is low
+    - easy way to quickly store your ideas for later or share with somebody else
+
+  - Demonstrations and documentation (`example <http://heliopython.org/gallery/generated/gallery/index.html>`_)
+
+    - used to demonstrate how to use a particular package / system
+    - good way to showcase something and can be part of a wider documentation
+
+  - Tutorials (scientific or otherwise) (`example <https://github.com/MagneticEarth/IAGA_SummerSchool2019>`_)
+
+    - ordered and informative with focus on the teaching element
+    - can be used as a resource for an in-person workshop
+    - for a deep dive, read `Teaching and Learning with Jupyter <https://jupyter4edu.github.io/jupyter-edu-book/>`_
+
+  - Reproducible scientific analysis (example?)
+
+    - high quality scientific content
+    - portability and reproducibility is most important
+    - can be supplementary material for a publication
 
 .. todo::
 
@@ -45,12 +119,11 @@ Preamble
  The top of the notebook should contain the following things to orientate the user:
 
 - *Short* introduction to what the notebook contains, including links to related notebooks & relevant resources. You may also consider a table of contents.
-- List of non-standard requirements for the notebook: e.g. data accessed by the notebook; additional packages to be installed. In the context of the VRE, *non-standard* here refers to anything not supported by the VRE currently (we can then investigate supporting these if appropriate). For a more sophisticated setup, consider a `requirements.txt`_ or `environment.yaml`_ to specify packages (and versions), and using `intake`_ to access remote data.
+- List of non-standard requirements for the notebook: e.g. data accessed by the notebook; additional packages to be installed. In the context of the VRE, *non-standard* here refers to anything not supported by the VRE currently (we can then investigate supporting these if appropriate). For a more sophisticated setup, consider a `requirements.txt`_ and/or `environment.yml`_ to specify packages (and versions).
 - Import all modules used in the notebook, and specify data file paths (use `pathlib <https://docs.python.org/3/library/pathlib.html#basic-use>`_ for platform-agnostic paths). This will make it clear what other resources (outside the notebook) are required to run it - if you can run this first code cell, you should be able to run the rest.
 
-.. _`requirements.txt`:
-.. _`environment.yaml`:
-.. _`intake`:
+.. _`requirements.txt`: https://pip.pypa.io/en/stable/user_guide/#requirements-files
+.. _`environment.yml`: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 Example:
 
@@ -58,9 +131,6 @@ Example:
 
   point to real example
 
-.. code-block:: python
-
-  import os
 
 Out-of-order execution...
 +++++++++++++++++++++++++
@@ -72,7 +142,7 @@ Out-of-order execution...
 Flow of variables and the namespace (local/global)...
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Use functions to avoid crowding the global namespace - i.e. reduce the occurrence of variables which are only needed within one cell, and build functions that can easily be understood from their name and docstring and can be re-used elsewhere. If a function is particularly useful (can be used in multiple notebooks), move it into an importable Python module (TODO: ref instructions), or even to a core package (e.g. viresclient).
+Use functions to avoid crowding the global namespace - i.e. reduce the occurrence of variables which are only needed within one cell, and build functions that can easily be understood from their name and docstring and can be re-used elsewhere. If a function is particularly useful (can be used in multiple notebooks), move it into an importable Python module, or even to a core package (e.g. viresclient).
 
 .. todo:: diagram showing progress of a tool from notebook (usable by this notebook) to src+notebook (usable by any notebook in this repository) to package+notebook (usable by anybody) -- increasing maturity
 
@@ -107,7 +177,7 @@ If the resource is intended to be public eventually, it is easier to make it pub
 
 2. Keep the README updated as the project evolves. This is the first point of call for someone coming across your repository so try to keep it brief yet informative.
 
-   - List contributors, contact info, instrutions for contributing
+   - List contributors, contact info, instructions for contributing
    - Provide instructions for using the notebooks (any external data or software required?)
    - Describe the contents of the notebooks (consider a table of contents)
    - Add *badges* at the top of the README - see `Repository badges`_
@@ -175,19 +245,19 @@ Markdown::
 reStructuredText::
 
   .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
-      :target: https://nbviewer.jupyter.org/github/smithara/IAGA_SummerSchool2019/tree/master/notebooks/
+     :target: https://nbviewer.jupyter.org/github/smithara/IAGA_SummerSchool2019/tree/master/notebooks/
 
-.. todo:: create VRE badge for nbgitpuller: https://shields.io/ http://tljh.jupyter.org/en/latest/howto/content/nbgitpuller.html
+.. todo::
+
+  create VRE badge for nbgitpuller: https://shields.io/ https://jupyterhub.github.io/nbgitpuller/link.html
+
+  reStructuredText::
+
+    .. image:: https://img.shields.io/badge/interact-VRE-blue
+       :target: https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/
 
 
 Moving beyond notebooks
 -----------------------
 
 .. todo:: separate guidance on creating packages: PyPI, Readthedocs, Travis-CI etc.
-
-
-.. note:: **Misc suggestions**
-
-  Make your code follow PEP8: https://black.now.sh
-
-  ...
