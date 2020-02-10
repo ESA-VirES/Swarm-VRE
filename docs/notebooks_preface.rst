@@ -9,10 +9,17 @@ Swarm Notebooks Overview
 
   The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks
 
-  | ``TODO: link to launch on VRE`` https://vre.vires.services/
-  | Choice: access them through a Jupyter extension to explore and add notebooks
-  |   OR access them as read-only in ``shared`` folder
-  |   OR pull the repo in with nbgitpuller
+  They can be explored interactively on the VRE:
+
+  .. raw:: html
+
+        <a href="https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/"
+        target="_blank">
+            <button type="button">
+                <img src="_static/vre_python_logo.svg.png" width=40></img>
+                Launch on VRE!
+            </button>
+        </a>
 
 Notebook catalogue
 ------------------
@@ -38,14 +45,15 @@ Planned notebook names:
   02e1_PlotExamples-Cartopy.ipynb             NOT CONFIRMED (MP/AS)
   02e2_PlotExamples-PeriodicAxes.ipynb        NOT CONFIRMED (MP/AS)
   02e3_PlotExamples-LinePlots.ipynb           NOT CONFIRMED (MP/AS)
+  02z1__Template-Basic                        DONE - pending updates (DS/AS)
 
   03a1_Demo-MAGx_LR_1B.ipynb                  DONE - pending updates (AS)
   03a2_Demo-MAGx_HR_1B.ipynb                  IN PROGRESS (MP/AS)
   03b__Demo-EFIx_LP_1B.ipynb                  DONE - pending updates (AS)
   03c__Demo-IPDxIRR_2F.ipynb                  DONE - pending updates (AS)
   03d__Demo-TECxTMS_2F.ipynb                  DONE - pending updates (AS)
-  03e1_Demo-FAC_TMS_2F.ipynb                  IN PROGRESS (AS)
-  03e__Demo-FACxTMS_2F.ipynb                  IN PROGRESS (AS)
+  03e1_Demo-FACxTMS_2F.ipynb                  DONE - pending updates (AS)
+  03e2_Demo-FAC_TMS_2F.ipynb                  IN PROGRESS (AS)
   03f__Demo-EEFxTMS_2F.ipynb                  DONE - pending updates (AS)
   03g__Demo-IBIxTMS_2F.ipynb                  DONE - pending updates (AS)
 

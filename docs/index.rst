@@ -13,6 +13,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
 .. toctree::
 
   --> [Launch VRE] <https://vre.vires.services/>
+  --> [viresclient docs] <https://viresclient.readthedocs.io/en/latest/readme.html>
 
 .. toctree::
   :maxdepth: 2
@@ -34,6 +35,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   Swarm_notebooks/01a__Intro-Jupyter-Python
   Swarm_notebooks/02a__Intro-Swarm-viresclient
   Swarm_notebooks/02b__viresclient-Available-Data
+  Swarm_notebooks/02z1__Template-Basic
 
 .. toctree::
   :maxdepth: 2
@@ -43,6 +45,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   Swarm_notebooks/03b__Demo-EFIx_LP_1B
   Swarm_notebooks/03c__Demo-IPDxIRR_2F
   Swarm_notebooks/03d__Demo-TECxTMS_2F
+  Swarm_notebooks/03e1_Demo-FACxTMS_2F
   Swarm_notebooks/03f__Demo-EEFxTMS_2F
   Swarm_notebooks/03g__Demo-IBIxTMS_2F
 
@@ -51,8 +54,6 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   :caption: External Links:
 
   VirES web interface <https://vires.services/>
-  viresclient Documentation <https://viresclient.readthedocs.io/>
-  viresclient notebook repository <https://github.com/smithara/viresclient_examples/>
-  Swarm-VRE GitHub <https://github.com/ESA-VirES/Swarm-VRE/>
-  viresclient GitHub <https://github.com/ESA-VirES/VirES-Python-Client/>
-  Swarm-DISC GitHub <https://github.com/Swarm-DISC/>
+  GitHub: Swarm-VRE <https://github.com/ESA-VirES/Swarm-VRE/>
+  GitHub: viresclient <https://github.com/ESA-VirES/VirES-Python-Client/>
+  GitHub: Swarm-DISC <https://github.com/Swarm-DISC/>

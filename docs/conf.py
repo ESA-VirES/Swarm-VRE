@@ -24,7 +24,8 @@ if not path.exists("Swarm_notebooks"):
          "Swarm_notebooks"],
         check=True)
 else:
-    run(["git", "-C", "Swarm_notebooks/", "pull"])
+    run(["git", "-C", "Swarm_notebooks/", "fetch"])
+    run(["git", "-C", "Swarm_notebooks/", "reset", "--hard", "origin/master"])
 
 
 # -- Project information -----------------------------------------------------
@@ -66,10 +67,25 @@ nbsphinx_prolog = """
 
     | Notebook source repo: https://github.com/Swarm-DISC/Swarm_notebooks
     | Notebook name: ``{{ nbname }}``
-    | `Download as .ipynb (right click and save as) <{{
+        (`executed <{{
         "https://raw.githubusercontent.com/Swarm-DISC/Swarm_notebooks/master/"
-        + nbname }}>`_
-    | (TODO: VRE access link)
+        + nbname }}>`_)
+        (`unexecuted <{{
+        "https://raw.githubusercontent.com/Swarm-DISC/Swarm_notebooks/staging/"
+        + nbname }}>`_)
+
+    .. raw:: html
+
+        <a href={{
+            "https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/"
+            + nbname }} target="_blank">
+            <button type="button">
+                <img src="../_static/vre_python_logo.svg.png" width=40></img>
+                Launch on VRE!
+            </button>
+        </a>
+
+
 """
 nbsphinx_execute = 'never'
 
