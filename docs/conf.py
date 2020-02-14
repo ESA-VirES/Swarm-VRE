@@ -24,8 +24,15 @@ if not path.exists("Swarm_notebooks"):
          "Swarm_notebooks"],
         check=True)
 else:
-    run(["git", "-C", "Swarm_notebooks/", "fetch"])
-    run(["git", "-C", "Swarm_notebooks/", "reset", "--hard", "origin/master"])
+    run("git -C Swarm_notebooks/ pull".split())
+run("pwd")
+# Identify current branch of these docs
+# - should be "master" or "staging", to match both Swarm-VRE & Swarm_notebooks
+branchname = run("git rev-parse --abbrev-ref HEAD".split(),
+                 check=True, capture_output=True, text=True)
+branchname = branchname.stdout.strip("\n")
+# Use that to access the associated branch on Swarm_notebooks
+run(f"git -C Swarm_notebooks/ checkout {branchname}".split())
 
 
 # -- Project information -----------------------------------------------------
@@ -67,12 +74,13 @@ nbsphinx_prolog = """
 
     | Notebook source repo: https://github.com/Swarm-DISC/Swarm_notebooks
     | Notebook name: ``{{ nbname }}``
-        (`executed <{{
+        (`download .ipynb <{{
         "https://raw.githubusercontent.com/Swarm-DISC/Swarm_notebooks/master/"
         + nbname }}>`_)
-        (`unexecuted <{{
-        "https://raw.githubusercontent.com/Swarm-DISC/Swarm_notebooks/staging/"
-        + nbname }}>`_)
+    | `Alternative view with nbviewer <{{
+        "https://nbviewer.jupyter.org/github/Swarm-DISC/Swarm_notebooks/tree/master/"
+        + nbname }}>`_ - sometimes the formatting below can be messed up
+        as it is processed by nbsphinx
 
     .. raw:: html
 
@@ -84,9 +92,20 @@ nbsphinx_prolog = """
                 Launch on VRE!
             </button>
         </a>
-
-
 """
+if branchname == "staging":
+    nbsphinx_prolog += """\n
+.. warning::
+
+    | You are currently viewing the staging branch and links above are
+        invalid. Instead use:
+    | `Alternative view with nbviewer <{{
+        "https://nbviewer.jupyter.org/github/Swarm-DISC/Swarm_notebooks/tree/staging/"
+        + nbname }}>`_
+    | `Download .ipynb <{{
+        "https://raw.githubusercontent.com/Swarm-DISC/Swarm_notebooks/staging/"
+        + nbname }}>`_
+    """
 nbsphinx_execute = 'never'
 
 

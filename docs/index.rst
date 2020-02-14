@@ -35,6 +35,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   Swarm_notebooks/01a__Intro-Jupyter-Python
   Swarm_notebooks/02a__Intro-Swarm-viresclient
   Swarm_notebooks/02b__viresclient-Available-Data
+  Swarm_notebooks/02c__viresclient-API
   Swarm_notebooks/02z1__Template-Basic
 
 .. toctree::
@@ -46,8 +47,15 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   Swarm_notebooks/03c__Demo-IPDxIRR_2F
   Swarm_notebooks/03d__Demo-TECxTMS_2F
   Swarm_notebooks/03e1_Demo-FACxTMS_2F
+  Swarm_notebooks/03e2_Demo-FAC_TMS_2F
   Swarm_notebooks/03f__Demo-EEFxTMS_2F
   Swarm_notebooks/03g__Demo-IBIxTMS_2F
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Geomagnetic Models:
+
+  Swarm_notebooks/04b1_Geomag-Models-eoxmagmod
 
 .. toctree::
   :maxdepth: 2

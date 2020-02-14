@@ -7,7 +7,7 @@ Swarm Notebooks Overview
 
 .. note::
 
-  The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks
+  The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks - they are also `viewable with nbviewer <https://nbviewer.jupyter.org/github/Swarm-DISC/Swarm_notebooks>`_.
 
   They can be explored interactively on the VRE:
 
@@ -20,6 +20,7 @@ Swarm Notebooks Overview
                 Launch on VRE!
             </button>
         </a>
+
 
 Notebook catalogue
 ------------------
@@ -36,29 +37,36 @@ Planned notebook names:
 
 .. code-block:: none
 
+      [Introduction -general]
+       - limited introductions to Python for data science
   01a__Intro-Jupyter-Python.ipynb             DONE - pending updates (AS)
+  01b1_Pandas-and-Plots.ipynb                 IN PROGRESS (AS)
 
+      [Introduction -VirES]
+       - how to interact with VirES
   02a__Intro-Swarm-viresclient.ipynb          DONE - pending updates (AS)
   02b__viresclient-Available-Data.ipynb       DONE - pending updates (AS)
-  02c__viresclient-API.ipynb                  IN PROGRESS (LM)
+  02c__viresclient-API.ipynb                  DONE (LM)
   02d__viresclient-Large-Data-Volumes.ipynb   IN PROGRESS (AS)
-  02e1_PlotExamples-Cartopy.ipynb             NOT CONFIRMED (MP/AS)
-  02e2_PlotExamples-PeriodicAxes.ipynb        NOT CONFIRMED (MP/AS)
-  02e3_PlotExamples-LinePlots.ipynb           NOT CONFIRMED (MP/AS)
   02z1__Template-Basic                        DONE - pending updates (DS/AS)
 
+      [VirES Demos]
+       - demonstrations of each Swarm product (basic access and plotting)
   03a1_Demo-MAGx_LR_1B.ipynb                  DONE - pending updates (AS)
   03a2_Demo-MAGx_HR_1B.ipynb                  IN PROGRESS (MP/AS)
   03b__Demo-EFIx_LP_1B.ipynb                  DONE - pending updates (AS)
   03c__Demo-IPDxIRR_2F.ipynb                  DONE - pending updates (AS)
   03d__Demo-TECxTMS_2F.ipynb                  DONE - pending updates (AS)
   03e1_Demo-FACxTMS_2F.ipynb                  DONE - pending updates (AS)
-  03e2_Demo-FAC_TMS_2F.ipynb                  IN PROGRESS (AS)
+  03e2_Demo-FAC_TMS_2F.ipynb                  DONE - pending updates (AS)
   03f__Demo-EEFxTMS_2F.ipynb                  DONE - pending updates (AS)
   03g__Demo-IBIxTMS_2F.ipynb                  DONE - pending updates (AS)
 
-  04a__Geomagnetic-Models.ipynb               NOT CONFIRMED
+      [Geomagnetic Models]
+  04a1_Geomag-Models-VirES.ipynb              IN PROGRESS (AS)
+  04b1_Geomag-Models-eoxmagmod.ipynb          DONE - pending updates (AS)
 
+      [Field-Aligned Currents]
   05a__FAC-Algorithms.ipynb                   NOT CONFIRMED
 
 Definitions:
@@ -68,47 +76,8 @@ Definitions:
   DONE:           currently in Swarm_notebooks repository
   NOT CONFIRMED:  name could change / could be multiple notebooks
 
-01: Generic grounding in Jupyter & Python
------------------------------------------
-.. code-block:: none
-
-  01a__Intro-Jupyter-Python
-  01b__<core lib demos>       (could do in the future)
-  ...
-
-02: Data access concept through VirES
--------------------------------------
-.. code-block:: none
-
-  02a__Intro-Swarm-viresclient             (config, basic data access and plotting)
-  02b__viresclient-Available-Data-Models   (identifying available data, configuring models)
-  02c__viresclient-API                     (further detail on interacting with viresclient)
-  02d__viresclient-Large-Data-Volumes      (some strategies for working with larger data)
-  02e1_PlotExamples....                    (more complex plot types)
-
-Plot Examples to contain:
-
-.. code-block:: none
-
-  periodic axes (could be nice for the FAC demos)
-  isolines (involves magnetic model calculation with eoxmagmod)
-  statistics
-  error intervals
-  polar views
-
-Refs:
-  - https://github.com/pacesm/jupyter_notebooks/blob/master/Periodic%20Axis.ipynb
-  - https://github.com/pacesm/jupyter_notebooks/blob/master/examples/CHAOS-6_Cartopy_Contours.ipynb
-
-03: Demonstrate accessing each product
---------------------------------------
-.. code-block:: none
-
-  03a1_Demo-MAGx_LR_1B           (load and plot example of the data/product)
-  etc... for each product/collection, using the official Swarm product names
-
-04: Magnetic model comparisons
-------------------------------
+04: Geomagnetic Models
+----------------------
 Demo different magnetic models, plotting etc, together with scientific discussion
 
 .. code-block:: none
@@ -120,8 +89,8 @@ Refs:
   - https://github.com/smithara/viresclient_examples/blob/master/CHAOS_Core%2BStatic%2BMMA_residuals.ipynb
   - https://github.com/smithara/viresclient_examples/blob/master/model_residuals_and_cartopy.ipynb
 
-05: FAC Demonstrations
-----------------------
+05: Field-Aligned Currents
+--------------------------
 .. code-block:: none
 
   05a__FAC-Algorithms        (overview of algo choices and how to run them)
