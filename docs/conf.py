@@ -25,12 +25,22 @@ if not path.exists("Swarm_notebooks"):
         check=True)
 else:
     run("git -C Swarm_notebooks/ pull".split())
-run("pwd")
 # Identify current branch of these docs
 # - should be "master" or "staging", to match both Swarm-VRE & Swarm_notebooks
-branchname = run("git rev-parse --abbrev-ref HEAD".split(),
-                 check=True, capture_output=True, text=True)
-branchname = branchname.stdout.strip("\n")
+command_output = run("git rev-parse --abbrev-ref HEAD".split(),
+                     check=True, capture_output=True, text=True)
+branchname = command_output.stdout.strip("\n")
+# The above doesn't work on readthedocs (it thinks it's always on master?)
+# A quick hack to make it work, based on the output of pwd:
+# /home/docs/checkouts/readthedocs.org/user_builds/swarm-vre/checkouts/staging/docs
+command_output = run("pwd", capture_output=True, text=True)
+workingdir = command_output.stdout.strip("\n")
+if "readthedocs" in workingdir:
+    if "staging" in workingdir:
+        branchname = "staging"
+    elif "master" in workingdir:
+        branchname = "master"
+print(f"Using branchname {branchname}")
 # Use that to access the associated branch on Swarm_notebooks
 run(f"git -C Swarm_notebooks/ checkout {branchname}".split())
 
