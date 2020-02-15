@@ -17,16 +17,9 @@
 from subprocess import run
 from os import path
 
-# Fetch external notebook repository
-if not path.exists("Swarm_notebooks"):
-    run(["git", "clone",
-         "https://github.com/Swarm-DISC/Swarm_notebooks.git",
-         "Swarm_notebooks"],
-        check=True)
-else:
-    run("git -C Swarm_notebooks/ pull".split())
 # Identify current branch of these docs
 # - should be "master" or "staging", to match both Swarm-VRE & Swarm_notebooks
+# NB relies on this code executing from this file location
 command_output = run("git rev-parse --abbrev-ref HEAD".split(),
                      check=True, capture_output=True, text=True)
 branchname = command_output.stdout.strip("\n")
@@ -41,8 +34,17 @@ if "readthedocs" in workingdir:
     elif "master" in workingdir:
         branchname = "master"
 print(f"Using branchname {branchname}")
-# Use that to access the associated branch on Swarm_notebooks
-run(f"git -C Swarm_notebooks/ checkout {branchname}".split())
+# Fetch external notebook repository
+# and switch to the branch to match the branch of these docs
+if not path.exists("Swarm_notebooks"):
+    run(["git", "clone",
+         "https://github.com/Swarm-DISC/Swarm_notebooks.git",
+         "Swarm_notebooks"],
+        check=True)
+    run(f"git -C Swarm_notebooks/ checkout {branchname}".split())
+else:
+    run(f"git -C Swarm_notebooks/ checkout {branchname}".split())
+    run("git -C Swarm_notebooks/ pull".split())
 
 
 # -- Project information -----------------------------------------------------
