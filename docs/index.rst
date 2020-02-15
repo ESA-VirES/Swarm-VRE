@@ -55,6 +55,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   :maxdepth: 2
   :caption: Geomagnetic Models:
 
+  Swarm_notebooks/04a1_Geomag-Models-VirES
   Swarm_notebooks/04b1_Geomag-Models-eoxmagmod
 
 .. toctree::

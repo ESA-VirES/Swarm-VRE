@@ -63,7 +63,7 @@ Planned notebook names:
   03g__Demo-IBIxTMS_2F.ipynb                  DONE - pending updates (AS)
 
       [Geomagnetic Models]
-  04a1_Geomag-Models-VirES.ipynb              IN PROGRESS (AS)
+  04a1_Geomag-Models-VirES.ipynb              DONE - pending updates (AS)
   04b1_Geomag-Models-eoxmagmod.ipynb          DONE - pending updates (AS)
 
       [Field-Aligned Currents]
