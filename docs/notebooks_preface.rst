@@ -40,20 +40,20 @@ Planned notebook names:
       [Introduction -general]
        - limited introductions to Python for data science
   01a__Intro-Jupyter-Python.ipynb             DONE - pending updates (AS)
-  01b1_Pandas-and-Plots.ipynb                 IN PROGRESS (AS)
+  (?) 01b1_Pandas-and-Plots.ipynb             IN PROGRESS (AS)
 
       [Introduction -VirES]
        - how to interact with VirES
   02a__Intro-Swarm-viresclient.ipynb          DONE - pending updates (AS)
   02b__viresclient-Available-Data.ipynb       DONE - pending updates (AS)
-  02c__viresclient-API.ipynb                  DONE (LM)
-  02d__viresclient-Large-Data-Volumes.ipynb   IN PROGRESS (AS)
+  02c__viresclient-API.ipynb                  DONE - pending updates (LM)
+  02d__viresclient-Large-Data.ipynb           DONE - pending updates (AS)
   02z1__Template-Basic                        DONE - pending updates (DS/AS)
 
       [VirES Demos]
        - demonstrations of each Swarm product (basic access and plotting)
   03a1_Demo-MAGx_LR_1B.ipynb                  DONE - pending updates (AS)
-  03a2_Demo-MAGx_HR_1B.ipynb                  IN PROGRESS (MP/AS)
+  03a2_Demo-MAGx_HR_1B.ipynb                  DONE - pending updates (AS)
   03b__Demo-EFIx_LP_1B.ipynb                  DONE - pending updates (AS)
   03c__Demo-IPDxIRR_2F.ipynb                  DONE - pending updates (AS)
   03d__Demo-TECxTMS_2F.ipynb                  DONE - pending updates (AS)
@@ -66,8 +66,8 @@ Planned notebook names:
   04a1_Geomag-Models-VirES.ipynb              DONE - pending updates (AS)
   04b1_Geomag-Models-eoxmagmod.ipynb          DONE - pending updates (AS)
 
-      [Field-Aligned Currents]
-  05a__FAC-Algorithms.ipynb                   NOT CONFIRMED
+      [Ionosphere]
+  05a1_Polar-Region-Plots.ipynb               DONE - pending updates (AS)
 
 Definitions:
 
@@ -80,21 +80,15 @@ Definitions:
 ----------------------
 Demo different magnetic models, plotting etc, together with scientific discussion
 
-.. code-block:: none
-
-  04a__...
-
 Refs:
   - https://github.com/smithara/viresclient_examples/blob/master/inspect_CHAOS_MMA.ipynb
   - https://github.com/smithara/viresclient_examples/blob/master/CHAOS_Core%2BStatic%2BMMA_residuals.ipynb
   - https://github.com/smithara/viresclient_examples/blob/master/model_residuals_and_cartopy.ipynb
 
-05: Field-Aligned Currents
---------------------------
-.. code-block:: none
+05: Ionosphere
+--------------
 
-  05a__FAC-Algorithms        (overview of algo choices and how to run them)
-  05b__<FAC-algo1...> etc.
+- Plasma properties, currents (FAC, AEJ ...), auroral oval boundaries
 
 
 
