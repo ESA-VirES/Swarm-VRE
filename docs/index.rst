@@ -33,6 +33,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   :caption: VirES/VRE Intros:
 
   Swarm_notebooks/01a__Intro-Jupyter-Python
+  Swarm_notebooks/01b1_Pandas-and-Plots
   Swarm_notebooks/02a__Intro-Swarm-viresclient
   Swarm_notebooks/02b__viresclient-Available-Data
   Swarm_notebooks/02c__viresclient-API
