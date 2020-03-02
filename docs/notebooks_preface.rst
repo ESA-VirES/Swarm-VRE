@@ -39,35 +39,36 @@ Planned notebook names:
 
       [Introduction -general]
        - limited introductions to Python for data science
-  01a__Intro-Jupyter-Python.ipynb             DONE - pending updates (AS)
-  (?) 01b1_Pandas-and-Plots.ipynb             IN PROGRESS (AS)
+  01a__Intro-Jupyter-Python.ipynb             DONE
+  01b1_Pandas-and-Plots.ipynb                 DONE
+  something about xarray                      NOT CONFIRMED
 
       [Introduction -VirES]
        - how to interact with VirES
-  02a__Intro-Swarm-viresclient.ipynb          DONE - pending updates (AS)
-  02b__viresclient-Available-Data.ipynb       DONE - pending updates (AS)
-  02c__viresclient-API.ipynb                  DONE - pending updates (LM)
-  02d__viresclient-Large-Data.ipynb           DONE - pending updates (AS)
-  02z1__Template-Basic                        DONE - pending updates (DS/AS)
+  02a__Intro-Swarm-viresclient.ipynb          DONE
+  02b__viresclient-Available-Data.ipynb       DONE
+  02c__viresclient-API.ipynb                  DONE
+  02d__viresclient-Large-Data.ipynb           DONE
+  02z1__Template-Basic                        DONE
 
       [VirES Demos]
        - demonstrations of each Swarm product (basic access and plotting)
-  03a1_Demo-MAGx_LR_1B.ipynb                  DONE - pending updates (AS)
-  03a2_Demo-MAGx_HR_1B.ipynb                  DONE - pending updates (AS)
-  03b__Demo-EFIx_LP_1B.ipynb                  DONE - pending updates (AS)
-  03c__Demo-IPDxIRR_2F.ipynb                  DONE - pending updates (AS)
-  03d__Demo-TECxTMS_2F.ipynb                  DONE - pending updates (AS)
-  03e1_Demo-FACxTMS_2F.ipynb                  DONE - pending updates (AS)
-  03e2_Demo-FAC_TMS_2F.ipynb                  DONE - pending updates (AS)
-  03f__Demo-EEFxTMS_2F.ipynb                  DONE - pending updates (AS)
-  03g__Demo-IBIxTMS_2F.ipynb                  DONE - pending updates (AS)
+  03a1_Demo-MAGx_LR_1B.ipynb                  DONE
+  03a2_Demo-MAGx_HR_1B.ipynb                  DONE
+  03b__Demo-EFIx_LP_1B.ipynb                  DONE
+  03c__Demo-IPDxIRR_2F.ipynb                  DONE
+  03d__Demo-TECxTMS_2F.ipynb                  DONE
+  03e1_Demo-FACxTMS_2F.ipynb                  DONE
+  03e2_Demo-FAC_TMS_2F.ipynb                  DONE
+  03f__Demo-EEFxTMS_2F.ipynb                  DONE
+  03g__Demo-IBIxTMS_2F.ipynb                  DONE
 
       [Geomagnetic Models]
-  04a1_Geomag-Models-VirES.ipynb              DONE - pending updates (AS)
-  04b1_Geomag-Models-eoxmagmod.ipynb          DONE - pending updates (AS)
+  04a1_Geomag-Models-VirES.ipynb              DONE
+  04b1_Geomag-Models-eoxmagmod.ipynb          DONE
 
       [Ionosphere]
-  05a1_Polar-Region-Plots.ipynb               DONE - pending updates (AS)
+  05a1_Polar-Region-Plots.ipynb               DONE
 
 Definitions:
 

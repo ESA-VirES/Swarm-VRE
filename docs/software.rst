@@ -27,6 +27,9 @@ viresclient
 Swarm community software
 ````````````````````````
 
+chaosmagpy
+  https://github.com/ancklo/ChaosMagPy
+
 pyamps
   https://pyamps.readthedocs.io
 
@@ -36,7 +39,14 @@ swarmpyfac
 ibp (Ionospheric bubble probability)
   https://gitext.gfz-potsdam.de/rother/ibp-model
 
-...tbc
+Wider geomagnetism and space physics community software
+```````````````````````````````````````````````````````
+
+magpysv
+  https://github.com/gracecox/MagPySV
+
+apexpy
+  https://github.com/aburrell/apexpy
 
 General Python software
 ```````````````````````
@@ -45,16 +55,41 @@ pandas
   https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html
 
 xarray
-  https://xarray.pydata.org/
+  https://xarray.pydata.org
 
 cartopy
-  https://scitools.org.uk/cartopy/
+  https://scitools.org.uk/cartopy
 
 dask
   https://docs.dask.org
 
-...tbc
+the HoloViz ecosystem
+  https://holoviz.org
 
+Tools to help with notebooks
+`````````````````````````````
+
+watermark
+  https://github.com/rasbt/watermark
+
+nbval
+  https://github.com/computationalmodelling/nbval
+
+nbdime
+  https://github.com/jupyter/nbdime
+
+nbgitpuller
+  https://github.com/jupyterhub/nbgitpuller
+
+----
+
+We are open to suggestions for other packages and extensions, see e.g.:
+
+  - https://github.com/mauhai/awesome-jupyterlab
+  - http://heliopython.org/projects/
+  - https://github.com/softwareunderground/awesome-open-geoscience
+
+If the package can be installed trivially by conda or pip, and is actively maintained, then we can probably add it. In other cases, we can look into it but it will take more effort. This is a reason why we should push for software to be packaged using modern tools and follow `standards <https://github.com/heliophysicsPy/standards/blob/master/standards.md>`_.
 
 ----
 
@@ -85,13 +120,3 @@ will create an environment stored within `~/envs/` and called 'my_env', with the
   ~/envs/my_env/bin/python -m ipykernel install --user --name my_env --display-name "my_env"
 
 The kernel should now be available to use from within notebooks, and you can also access the environment in a terminal with ``conda activate ~/envs/my_env``. Since we have stored it in the home directory, it will not be lost when the container shuts down. You can see what kernels are installed with ``jupyter kernelspec list``.
-
-
-----
-
-Extensions
-----------
-
-tbc
-
-https://github.com/mauhai/awesome-jupyterlab
