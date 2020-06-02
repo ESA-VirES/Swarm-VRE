@@ -60,6 +60,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
 
   Swarm_notebooks/04a1_Geomag-Models-VirES
   Swarm_notebooks/04b1_Geomag-Models-eoxmagmod
+  Swarm_notebooks/04c1_Geomag-Ground-Data-FTP
 
 .. toctree::
   :maxdepth: 2
