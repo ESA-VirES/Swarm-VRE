@@ -27,5 +27,6 @@ You must first create a VirES account at https://vires.services - it is recommen
 Related links
 -------------
 
-- Official ESA Swarm website: https://earth.esa.int/web/guest/missions/esa-operational-eo-missions/swarm
+- Official ESA Swarm website: https://earth.esa.int/eogateway/missions/swarm
+- Old ESA Swarm website: https://earth.esa.int/web/guest/missions/esa-operational-eo-missions/swarm
 - EOX VirES blog posts: https://eox.at/category/vires/

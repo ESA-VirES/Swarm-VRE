@@ -46,7 +46,7 @@ There are some quirks about the behaviour of Jupyter that can be surprising and 
     - This might vary between browsers and systems (?)
     - This is most noticeable when trying to copy and paste
 
- - When using the terminal, Ctrl+c and Ctrl+v will not copy and paste. They keyboard shortcuts for copy and paste are Ctrl+Insert and Shift+Insert (this is a normal Unix thing)
+ - When using the terminal, Ctrl+c and Ctrl+v will not copy and paste. The keyboard shortcuts for copy and paste are Ctrl+Insert and Shift+Insert (this is a normal Unix thing)
 
  - When using notebooks:
 
@@ -70,6 +70,7 @@ Useful external links
 
 A few other examples of JupyterHub deployments:
 
+- https://ingeo.datatransport.org/home/resen/resen-online
 - http://pangeo.io
 - http://data8.org/
 - https://www.egi.eu/services/notebooks/
