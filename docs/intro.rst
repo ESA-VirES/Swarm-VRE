@@ -6,7 +6,7 @@ What is the VRE?
 
 "VRE" refers to the "Virtual Research Environment" developed for ESA's *Swarm* mission. This is a cloud service to provide an interactive computational environment to help exploit data from *Swarm*. The system uses an open source system called "JupyterHub", and is integrated with the "VirES for Swarm" service. JupyterHub is a system which orchestrates a multi-user environment in the cloud where users can login to a programming environment called JupyterLab directly in the browser and have access to a common (as in, the same between users) set of software packages. VirES is a service which provides convenient and flexible access to Swarm data and models.
 
-- VirES (**Vir**\ tual environments for **E**\ arth **S**\ cientists) web client: https://vires.services
+- VirES (**Vir**\ tual Workspaces for **E**\ arth Observation **S**\ cientists) web client: https://vires.services
 - VRE (**V**\ irtual **R**\ esearch **E**\ nvironment) login: https://vre.vires.services
 - viresclient Python package (i.e. integration with VirES, for Swarm data access): https://viresclient.readthedocs.io
 
