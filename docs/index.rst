@@ -26,47 +26,13 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
   systemspec
   collaborating
   notebook_development
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Swarm notebooks
+
   notebooks_preface
-
-.. toctree::
-  :maxdepth: 2
-  :caption: VirES/VRE Intros:
-
-  Swarm_notebooks/01a__Intro-Jupyter-Python
-  Swarm_notebooks/01b1_Pandas-and-Plots
-  Swarm_notebooks/02a__Intro-Swarm-viresclient
-  Swarm_notebooks/02b__viresclient-Available-Data
-  Swarm_notebooks/02c__viresclient-API
-  Swarm_notebooks/02d__viresclient-Large-Data
-  Swarm_notebooks/02z1__Template-Basic
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Swarm Product Demos:
-
-  Swarm_notebooks/03a1_Demo-MAGx_LR_1B
-  Swarm_notebooks/03a2_Demo-MAGx_HR_1B
-  Swarm_notebooks/03b__Demo-EFIx_LP_1B
-  Swarm_notebooks/03c__Demo-IPDxIRR_2F
-  Swarm_notebooks/03d__Demo-TECxTMS_2F
-  Swarm_notebooks/03e1_Demo-FACxTMS_2F
-  Swarm_notebooks/03e2_Demo-FAC_TMS_2F
-  Swarm_notebooks/03f__Demo-EEFxTMS_2F
-  Swarm_notebooks/03g__Demo-IBIxTMS_2F
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Geomagnetic Models:
-
-  Swarm_notebooks/04a1_Geomag-Models-VirES
-  Swarm_notebooks/04b1_Geomag-Models-eoxmagmod
-  Swarm_notebooks/04c1_Geomag-Ground-Data-FTP
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Ionosphere:
-
-  Swarm_notebooks/05a1_Polar-Region-Plots
+  Swarm_notebooks
 
 .. toctree::
   :maxdepth: 2

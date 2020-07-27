@@ -7,7 +7,9 @@ Swarm Notebooks Overview
 
 .. note::
 
-  The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks - they are also `viewable with nbviewer <https://nbviewer.jupyter.org/github/Swarm-DISC/Swarm_notebooks>`_.
+  The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks
+
+  The notebooks are also `browseable on Treebeard <https://treebeard.io/admin/Swarm-DISC/Swarm_notebooks/staging>`_
 
   They can be explored interactively on the VRE:
 
