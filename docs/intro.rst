@@ -1,6 +1,15 @@
 Introduction
 ============
 
+----
+
+.. raw:: html
+
+   Notice:
+   <iframe width="100%" height="500" src="https://hackmd.io/@swarm/vre-webinar-splash" frameborder="1"></iframe>
+
+----
+
 What is the VRE?
 ----------------
 
