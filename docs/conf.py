@@ -90,15 +90,17 @@ html_theme_options = {
 }
 # Use sphinx-comments to add GitHub-connected comments to each page through utteranc.es
 html_extensions = [
-   "sphinx_comments"
+   "sphinx_comments",
 ]
 comments_config = {
-   "utterances": {
-      "repo": "MagneticEarth/MagneticEarth.github.io",
-      "issue-term": "title",
-      "theme": "github-light",
-      "crossorigin": "anonymous"
-   }
+#    "utterances": {
+#       "repo": "MagneticEarth/MagneticEarth.github.io",
+#       "optional": "config",
+#       "issue-term": "title",
+#       "theme": "github-light",
+#       "crossorigin": "anonymous"
+#    },
+   "hypothesis": True
 }
 
 # -- Generate rst files that embed notebooks from Treebeard as iframes -------
