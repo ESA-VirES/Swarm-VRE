@@ -142,16 +142,17 @@ def create_notebook_rst_files(branchname):
        
     .. raw:: html
 
+        <p style="text-align:right">
+        <a href="https://via.hypothes.is/https://api.treebeard.io/Swarm-DISC/Swarm_notebooks/{branchname}/notebooks/{nbname}.ipynb">
+        <i class="fa fa-external-link-square fa-fw"></i> Fullscreen (highlight text to annotate) 
+        </a>
+        </p>
         <iframe
             src="https://api.treebeard.io/Swarm-DISC/Swarm_notebooks/{branchname}/notebooks/{nbname}.ipynb"
             frameborder="1" style="height: 1000px; width: 100%;"
         ></iframe>
     
-        <p style="text-align:right">
-        <a href="https://via.hypothes.is/https://api.treebeard.io/Swarm-DISC/Swarm_notebooks/{branchname}/notebooks/{nbname}.ipynb">
-        Fullscreen <i class="fa fa-external-link-square fa-fw"></i>
-        </a>
-        </p>
+
 
     """)
 
@@ -189,7 +190,8 @@ def create_notebook_rst_files(branchname):
         'AEBS: Auroral electrojets LPL': '03h1_Demo-AEBS-AEJxLPL',
         'Model residuals through VirES': '04a1_Geomag-Models-VirES',
         'Forward eval + isolines': '04b1_Geomag-Models-eoxmagmod',
-        'Geomagnetic ground obs': '04c1_Geomag-Ground-Data-FTP',
+        'Ground observatories - FTP': '04c1_Geomag-Ground-Data-FTP',
+        'Ground observatories - VirES': '04c2_Geomag-Ground-Data-VirES',
         'Polar region plots': '05a1_Polar-Region-Plots'
     }
 

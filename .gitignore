@@ -1,3 +1,6 @@
 # Sphinx documentation
 docs/_build/
 docs/Swarm_notebooks/
+
+# VSCode
+.vscode

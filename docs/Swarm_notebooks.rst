@@ -32,14 +32,15 @@ Swarm Product Demos
     Swarm_notebooks/03g__Demo-IBIxTMS_2F
     Swarm_notebooks/03h1_Demo-AEBS-AEJxLPL
 
-Geomagnetic Models
-==================
+Geomagnetic Models & Ground Obs
+===============================
 
 .. toctree::
 
     Swarm_notebooks/04a1_Geomag-Models-VirES
     Swarm_notebooks/04b1_Geomag-Models-eoxmagmod
     Swarm_notebooks/04c1_Geomag-Ground-Data-FTP
+    Swarm_notebooks/04c2_Geomag-Ground-Data-VirES
 
 Ionosphere
 ==========

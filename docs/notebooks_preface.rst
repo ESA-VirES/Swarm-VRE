@@ -9,8 +9,6 @@ Swarm Notebooks Overview
 
   The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks
 
-  The notebooks are also `browseable on Treebeard <https://treebeard.io/admin/Swarm-DISC/Swarm_notebooks/staging>`_
-
   They can be explored interactively on the VRE:
 
   .. raw:: html
@@ -24,78 +22,12 @@ Swarm Notebooks Overview
         </a>
 
 
-Notebook catalogue
-------------------
+⬅️ You can browse them organised by theme on the left.
 
 These notebooks are organised according to a naming convention to categorise and allow for future development::
 
-  01a__<nbname>   Theme 1, subject a
-  01b__<nbname>   Theme 1, subject b
-  01b1_<nbname>   Theme 1, subject b, addendum 1
-  02a__<nbname>   Theme 2, subject a
+  01a__<nbname>.ipynb   Theme 1, subject a
+  01b__<nbname>.ipynb   Theme 1, subject b
+  01b1_<nbname>.ipynb   Theme 1, subject b, addendum 1
+  02a__<nbname>.ipynb   Theme 2, subject a
   ...
-
-Planned notebook names:
-
-.. code-block:: none
-
-      [Introduction -general]
-       - limited introductions to Python for data science
-  01a__Intro-Jupyter-Python.ipynb             DONE
-  01b1_Pandas-and-Plots.ipynb                 DONE
-  something about xarray                      NOT CONFIRMED
-
-      [Introduction -VirES]
-       - how to interact with VirES
-  02a__Intro-Swarm-viresclient.ipynb          DONE
-  02b__viresclient-Available-Data.ipynb       DONE
-  02c__viresclient-API.ipynb                  DONE
-  02d__viresclient-Large-Data.ipynb           DONE
-  02z1__Template-Basic                        DONE
-
-      [VirES Demos]
-       - demonstrations of each Swarm product (basic access and plotting)
-  03a1_Demo-MAGx_LR_1B.ipynb                  DONE
-  03a2_Demo-MAGx_HR_1B.ipynb                  DONE
-  03b__Demo-EFIx_LP_1B.ipynb                  DONE
-  03c__Demo-IPDxIRR_2F.ipynb                  DONE
-  03d__Demo-TECxTMS_2F.ipynb                  DONE
-  03e1_Demo-FACxTMS_2F.ipynb                  DONE
-  03e2_Demo-FAC_TMS_2F.ipynb                  DONE
-  03f__Demo-EEFxTMS_2F.ipynb                  DONE
-  03g__Demo-IBIxTMS_2F.ipynb                  DONE
-
-      [Geomagnetic Models]
-  04a1_Geomag-Models-VirES.ipynb              DONE
-  04b1_Geomag-Models-eoxmagmod.ipynb          DONE
-
-      [Ionosphere]
-  05a1_Polar-Region-Plots.ipynb               DONE
-
-Definitions:
-
-.. code-block:: none
-
-  DONE:           currently in Swarm_notebooks repository
-  NOT CONFIRMED:  name could change / could be multiple notebooks
-
-04: Geomagnetic Models
-----------------------
-Demo different magnetic models, plotting etc, together with scientific discussion
-
-Refs:
-  - https://github.com/smithara/viresclient_examples/blob/master/inspect_CHAOS_MMA.ipynb
-  - https://github.com/smithara/viresclient_examples/blob/master/CHAOS_Core%2BStatic%2BMMA_residuals.ipynb
-  - https://github.com/smithara/viresclient_examples/blob/master/model_residuals_and_cartopy.ipynb
-
-05: Ionosphere
---------------
-
-- Plasma properties, currents (FAC, AEJ ...), auroral oval boundaries
-
-
-
-Beyond Swarm_notebooks
-----------------------
-
-These notebooks are demonstrations of the capabilities of Swarm data and the VirES/VRE platform. They are meant as a tutorial-like resource to help educate the community with showcases of certain tools (including Swarm-related Python packages). It is hoped that this will encourage the development of reproducible analyses as notebook repositories and of more generally applicable packages.
