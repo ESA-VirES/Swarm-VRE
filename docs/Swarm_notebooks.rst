@@ -31,6 +31,7 @@ Swarm Product Demos
     Swarm_notebooks/03f__Demo-EEFxTMS_2F
     Swarm_notebooks/03g__Demo-IBIxTMS_2F
     Swarm_notebooks/03h1_Demo-AEBS-AEJxLPL
+    Swarm_notebooks/03h2_Demo-AEBS-AEJxLPS
 
 Geomagnetic Models & Ground Obs
 ===============================
