@@ -1,7 +1,9 @@
 About Jupyter
 =============
 
-This page provides guidance regarding the use of Jupyter.
+.. note::
+
+  This page provides some guidance regarding Jupyter. For a full guide and reference, you should take a look at the `JupyterLab docs <https://jupyterlab.readthedocs.io/>`_ (though by using the Swarm VRE, you can ignore the sections about installing Jupyter yourself).
 
 Terminology
 -----------
@@ -75,3 +77,8 @@ A few other examples of JupyterHub deployments:
 - http://data8.org/
 - https://www.egi.eu/services/notebooks/
 - https://www.dataschool.io/cloud-services-for-jupyter-notebook/
+
+The usage of the Jupyter notebook format is not limited to JupyterLab, for example:
+
+- `Google Colaboratory <https://colab.research.google.com/>`_ allows you to run and share notebooks on Google's infrastructure
+- You can also work with notebooks `using Visual Studio Code <https://code.visualstudio.com/docs/python/jupyter-support>`_

@@ -1,11 +1,13 @@
 Software available
 ==================
 
-This page introduces some of the key software provided. We build on top of the `Jupyter Notebook Scientific Python Stack <https://hub.docker.com/r/jupyter/scipy-notebook>`_ which provides a solid scientific Python environment (i.e. numpy, scipy, pandas, matplotlib...). We add some extra general-purpose Python packages and Jupyter extensions as well as specific packages from the research communities around Swarm. We are actively working towards including more community software. If you think there is an important package missing, please email ashley.smith@ed.ac.uk. For further information on relevant scientific Python packages, refer to:
+This page introduces some of the key software provided. We build on top of the `Jupyter Notebook Scientific Python Stack <https://hub.docker.com/r/jupyter/scipy-notebook>`_ which provides a solid scientific Python environment (i.e. numpy, scipy, pandas, matplotlib...). We add some extra general-purpose Python packages and Jupyter extensions as well as specific packages from the research communities around Swarm. We are actively working towards including more community software. If you think there is an important package missing, please email ashley.smith@ed.ac.uk. For further information on relevant scientific Python packages, you may refer to:
 
  - `Python in Heliophysics Community <http://heliopython.org/projects/>`_
  - `Resen ("REproducable Software ENvironment" for geospace research) <https://ingeo.datatransport.org/home/resen/packages>`_
  - `Magnetic Earth (community resource for geomagnetism) <https://magneticearth.org/pages/software.html>`_
+ - `Software Underground - geoscience software <https://github.com/softwareunderground/awesome-open-geoscience>`_
+ - `Awesome JupyterLab - extensions <https://github.com/mauhai/awesome-jupyterlab>`_
 
 To see the full list of installed packages and their version numbers, open a terminal and enter ``conda list``.
 
@@ -102,10 +104,8 @@ Tools to help with notebooks
 
 ----
 
-We are open to suggestions for other packages and extensions, see e.g.:
-
-  - https://github.com/mauhai/awesome-jupyterlab
-  - https://github.com/softwareunderground/awesome-open-geoscience
+We are open to suggestions for other packages and extensions!
+  
 
 ----
 

@@ -22,9 +22,9 @@ Swarm Notebooks Overview
         </a>
 
 
-⬅️ You can browse them organised by theme on the left.
+``Swarm_notebooks`` are a guide to the Swarm products and usage of related Python packages, providing demonstrations and replicable recipes to launch analyses of the data. You can browse them organised by theme on the left. In the long term these notebooks are intended to be a community-built resource and so we are open to all forms of contributions - check the README at https://github.com/Swarm-DISC/Swarm_notebooks
 
-These notebooks are organised according to a naming convention to categorise and allow for future development::
+The notebook file names follow a naming convention to categorise and allow for future development::
 
   01a__<nbname>.ipynb   Theme 1, subject a
   01b__<nbname>.ipynb   Theme 1, subject b
