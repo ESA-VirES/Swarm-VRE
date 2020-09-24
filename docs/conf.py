@@ -55,6 +55,7 @@ author = 'EOX'
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
+    'sphinx_comments'
 ]
 todo_include_todos = True
 
@@ -89,17 +90,15 @@ html_theme_options = {
     'collapse_navigation':False
 }
 # Use sphinx-comments to add GitHub-connected comments to each page through utteranc.es
-html_extensions = [
-   "sphinx_comments",
-]
+# as well as hypothes.is overlays
 comments_config = {
-#    "utterances": {
-#       "repo": "MagneticEarth/MagneticEarth.github.io",
-#       "optional": "config",
-#       "issue-term": "title",
-#       "theme": "github-light",
-#       "crossorigin": "anonymous"
-#    },
+   "utterances": {
+      "repo": "ESA-VirES/Swarm-VRE",
+      "optional": "config",
+      "issue-term": "pathname",
+      "theme": "github-light",
+      "crossorigin": "anonymous"
+   },
    "hypothesis": True
 }
 
