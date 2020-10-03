@@ -1,10 +1,6 @@
 Swarm Notebooks Overview
 ========================
 
-.. warning::
-
-  In development
-
 .. note::
 
   The following pages are generated from the notebooks hosted at https://github.com/Swarm-DISC/Swarm_notebooks
@@ -13,7 +9,7 @@ Swarm Notebooks Overview
 
   .. raw:: html
 
-        <a href="https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/"
+        <a href="https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/notebooks"
         target="_blank">
             <button type="button">
                 <img src="_static/vre_python_logo.svg.png" width=40></img>

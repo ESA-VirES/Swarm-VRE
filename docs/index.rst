@@ -17,7 +17,7 @@ Notebooks are included which are pulled from https://github.com/Swarm-DISC/Swarm
 
 .. toctree::
   :maxdepth: 2
-  :caption: VRE Information:
+  :caption: VRE Information
 
   intro
   help
