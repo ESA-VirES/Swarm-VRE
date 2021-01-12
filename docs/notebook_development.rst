@@ -16,64 +16,6 @@ Notebook development
     - `Creating Reproducible Data Science Projects <https://towardsdatascience.com/creating-reproducible-data-science-projects-1fa446369386>`_
     - `Devops for Data Science: Making your Python Project Reproducible <https://towardsdatascience.com/devops-for-data-science-making-your-python-project-reproducible-f55646e110fa>`_
 
-Related notebook repositories
------------------------------
-
-.. list-table:: Notebook repositories
-   :header-rows: 1
-   :widths: 7 5 5
-
-   *  -  Name (GitHub Link)
-      -  View (nbviewer)
-      -  Launch/interact (VRE)
-   *  -  `Swarm-DISC/Swarm_notebooks <https://github.com/Swarm-DISC/Swarm_notebooks>`_
-      -  .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
-            :target: https://nbviewer.jupyter.org/github/Swarm-DISC/Swarm_notebooks
-      -  .. image:: https://img.shields.io/badge/interact-VRE-blue
-            :target: https://vre.vires.services/user-redirect/lab/tree/shared/Swarm_notebooks/
-   *  -  `pacesm/jupyter_notebooks <https://github.com/pacesm/jupyter_notebooks>`_
-      -  .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
-            :target: https://nbviewer.jupyter.org/github/pacesm/jupyter_notebooks
-      -  .. image:: https://img.shields.io/badge/nbgitpuller-VRE-blue
-            :target: https://vre.vires.services/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpacesm%2Fjupyter_notebooks&urlpath=lab%2Ftree%2F%2F&branch=master
-   *  - `MagneticEarth/IAGA_SummerSchool2019 <https://github.com/MagneticEarth/IAGA_SummerSchool2019>`_
-      - .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
-           :target: https://nbviewer.jupyter.org/github/MagneticEarth/IAGA_SummerSchool2019/
-      - .. image:: https://img.shields.io/badge/nbgitpuller-VRE-blue
-            :target: https://vre.vires.services/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FMagneticEarth%2FIAGA_SummerSchool2019&urlpath=lab%2Ftree%2FIAGA_SummerSchool2019%2F&branch=master
-   *  - `klaundal/notebooks <https://github.com/klaundal/notebooks>`_
-      - .. image:: https://img.shields.io/badge/render-nbviewer-orange.svg
-           :target: https://nbviewer.jupyter.org/github/klaundal/notebooks
-      - .. image:: https://img.shields.io/badge/nbgitpuller-VRE-blue
-            :target: https://vre.vires.services/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fklaundal%2Fnotebooks&urlpath=lab%2Ftree%2Fnotebooks%2F&branch=master
-  
-Viewing notebooks
-+++++++++++++++++
-
-**Viewing:** Sometimes notebooks won't render directly on the GitHub website (or are slow). Try `nbviewer <https://nbviewer.jupyter.org/>`_ instead (see the "Render" links above). *Swarm_notebooks* are also rendered on the following pages of this site.
-
-Loading and sharing notebooks
-+++++++++++++++++++++++++++++
-
-**Interacting with Swarm_notebooks:** These are pre-loaded on the VRE in the shared directory. In this case they are read-only, which means that you can still edit and execute them, but you can't save changes directly. On the other hand, clicking their icons in the Launcher in JupyterLab will create an editable copy of them. External notebooks can be loaded manually through the JupyterLab interface, or through git or *nbgitpuller*.
-
-**nbgitpuller:** The "nbgitpuller" links above will automatically pull in external repositories and open them on the VRE. If you are familiar with git then you might instead clone the repository manually, as there is `automatic merging behaviour <https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html>`_ which may not do what you want. This tool is useful for easily sharing resources with other people (for example, distributing resources for a class). You can craft your own links using the `nbgitpuller link generator <https://jupyterhub.github.io/nbgitpuller/link.html>`_ where you should set the JupyterHub URL as ``https://vre.vires.services/``.
-
-Notebooks can be uploaded to JupyterLab using the "Upload" button (which means you must first download the notebooks to your computer from GitHub or elsewhere). To easily access a full repository, open a command line console and use git:
-
-To clone a repository to your working space::
-
-    git clone https://github.com/pacesm/jupyter_notebooks.git ~/martins_notebooks
-
-(this will clone it into ``martins_notebooks`` within your home directory)
-
-To clear any changes you made and fetch the latest version run::
-
-    cd ~/martins_notebooks
-    git fetch
-    git reset --hard origin/master
-
-
 What are notebooks?
 -------------------
 
@@ -143,6 +85,22 @@ Pitfalls of notebooks
   - Diagram showing progress of a tool from notebook (usable by this notebook) to module+notebook (usable by any notebook in this repository) to package+notebook (usable by anybody) -- increasing maturity
 
 
+Loading and sharing notebooks
+-----------------------------
+
+Notebooks can be uploaded to JupyterLab using the "Upload" button (which means you must first download the notebooks to your computer from GitHub or elsewhere). To easily access a full repository, open a command line console and use git:
+
+To clone a repository to your working space::
+
+    git clone https://github.com/pacesm/jupyter_notebooks.git ~/martins_notebooks
+
+(this will clone it into ``martins_notebooks`` within your home directory)
+
+To clear any changes you made and fetch the latest version run::
+
+    cd ~/martins_notebooks
+    git fetch
+    git reset --hard origin/master
 
 Creating a notebook repository
 ------------------------------

@@ -92,13 +92,13 @@ html_theme_options = {
 # Use sphinx-comments to add GitHub-connected comments to each page through utteranc.es
 # as well as hypothes.is overlays
 comments_config = {
-   "utterances": {
-      "repo": "ESA-VirES/Swarm-VRE",
-      "optional": "config",
-      "issue-term": "pathname",
-      "theme": "github-light",
-      "crossorigin": "anonymous"
-   },
+#    "utterances": {
+#       "repo": "ESA-VirES/Swarm-VRE",
+#       "optional": "config",
+#       "issue-term": "pathname",
+#       "theme": "github-light",
+#       "crossorigin": "anonymous"
+#    },
    "hypothesis": True
 }
 
@@ -157,6 +157,11 @@ def create_notebook_rst_files(branchname):
 
     # Text to insert at top of each notebook page
     prolog = dedent("""
+    .. warning::
+
+        | **Sorry - the view below has broken! Please instead** `VIEW ALL NOTEBOOKS HERE <https://vigilant-kirch-b18653.netlify.app/notebooks/02a__intro-swarm-viresclient>`_
+        | (temporarily - new website under development)
+
     .. note::
 
         Please `get in touch <https://swarm-vre.readthedocs.io/en/latest/help.html>`_ if you would like a live demo or want some help! (or if you are able to contribute - ideas are also welcome!)
@@ -176,13 +181,6 @@ def create_notebook_rst_files(branchname):
     
     {nbtitle}
     """)
-    if branchname == "staging":
-        prolog += dedent("""
-        .. warning::
-
-            You are currently viewing the staging branch. 
-        """)
-
     treebeard_view = dedent("""
     .. raw:: html
 
@@ -203,10 +201,11 @@ def create_notebook_rst_files(branchname):
 
     for nbtitle, nbname in notebooks.items():
         nbtitle_underlined = nbtitle + "\n" + "-"*len(nbtitle)
-        if nbname in notebooks_deprecated:
-            page_template = prolog + deprecated_notebook_view
-        else:
-            page_template = prolog + treebeard_view
+        page_template = prolog
+        # if nbname in notebooks_deprecated:
+        #     page_template = prolog + deprecated_notebook_view
+        # else:
+        #     page_template = prolog + treebeard_view
         filecontents = page_template.format(
             nbtitle=nbtitle_underlined, nbname=nbname, branchname=branchname
         )
