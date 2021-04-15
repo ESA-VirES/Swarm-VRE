@@ -1,3 +1,7 @@
+.. warning::
+
+  `THESE PAGES HAVE MOVED TO swarm.magneticearth.org <https://swarm.magneticearth.org>`_
+
 Software available
 ==================
 
