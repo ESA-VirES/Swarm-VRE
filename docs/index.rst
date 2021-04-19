@@ -1,3 +1,7 @@
+.. warning::
+
+  `THESE PAGES HAVE MOVED TO swarm.magneticearth.org <https://swarm.magneticearth.org>`_
+
 .. Swarm VRE documentation master file, created by
    sphinx-quickstart on Mon Aug  5 12:17:45 2019.
    You can adapt this file completely to your liking, but it should at least

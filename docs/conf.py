@@ -159,8 +159,7 @@ def create_notebook_rst_files(branchname):
     prolog = dedent("""
     .. warning::
 
-        | **Sorry - the view below has broken! Please instead** `VIEW ALL NOTEBOOKS HERE <https://vigilant-kirch-b18653.netlify.app/notebooks/02a__intro-swarm-viresclient>`_
-        | (temporarily - new website under development)
+        `THESE PAGES HAVE MOVED TO swarm.magneticearth.org <https://swarm.magneticearth.org>`_
 
     .. note::
 
